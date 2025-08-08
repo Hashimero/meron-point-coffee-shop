@@ -181,30 +181,27 @@ body {
 .contact .container .section-header {
   text-align: center;
   margin-bottom: 4rem;
-  line-height: 1.4;
 }
 
-.about .container h2,
-.menu .container h2,
-.contact .container h2 {
+.about .container .section-header h2,
+.menu .container .section-header h2,
+.contact .container .section-header h2 {
   font-size: 3rem;
   color: var(--foreground);
-  text-align: center;
 }
 
-.about .container span,
-.menu .container span,
-.contact .container span {
+.about .container .section-header span,
+.menu .container .section-header span,
+.contact .container .section-header span {
   color: var(--primary);
 }
 
 .about .container .section-header p,
 .menu .container .section-header p,
 .contact .container .section-header p {
-  font-size: 1.2rem;
-  color: rgba(250, 250, 250, 0.6);
-  text-align: center;
-  font-weight: 300;
+  font-size: 1.3rem;
+  color: rgba(250, 250, 250, 0.7);
+  margin: 0 8rem;
 }
 
 /* About Section */
@@ -272,14 +269,13 @@ body {
 .menu .container .row .menu-card-title {
   color: var(--foreground);
   margin: 1rem auto 0;
-  font-size: 1.4rem;
+  font-size: 1.7rem;
 }
 
 .menu .container .row .menu-card-price {
-  color: var(--primary);
-  font-size: 1.1rem;
+  color: rgba(250, 250, 250, 0.7);
+  font-size: 1.3rem;
   font-weight: 600;
-  mix-blend-mode: lighten;
 }
 
 /* Contact Section */
@@ -329,8 +325,8 @@ body {
 }
 
 .contact .container .row form .input-group svg {
-  width: 1.3rem;
-  height: 1.3rem;
+  width: 1.6rem;
+  height: 1.6rem;
   vertical-align: middle;
   display: inline-flex;
   align-items: center;
@@ -340,7 +336,7 @@ body {
   width: 100%;
   border: none;
   padding: 1rem;
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: var(--foreground);
   background-color: transparent;
 }
@@ -389,8 +385,8 @@ footer .social a {
 }
 
 footer .social a svg {
-  width: 1.6rem;
-  height: 1.6rem;
+  width: 1.8rem;
+  height: 1.8rem;
 }
 
 footer .social a:hover {
@@ -400,7 +396,7 @@ footer .social a:hover {
 }
 
 footer .links {
-  margin: 1.5rem 0 1.2rem;
+  margin: 1.5rem 0.3rem 1.2rem;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -411,7 +407,7 @@ footer .links a {
   padding: 0.8rem 1.2rem;
   border-radius: 0.3rem;
   font-weight: 500;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   text-decoration: none;
   letter-spacing: 0.5px;
 }
@@ -421,7 +417,7 @@ footer .links a:hover {
   transition: all 0.1s linear;
 }
 
-footer .credit {
+footer .credit small {
   font-size: 1rem;
   color: rgba(250, 250, 250, 0.7);
   letter-spacing: 0.2px;
@@ -509,6 +505,7 @@ footer .credit a:hover {
 
   .about .container .row .content {
     padding: 0;
+    text-align: center;
   }
 
   .about .container .row .content h3 {
